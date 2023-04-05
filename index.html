@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elderly Health Care</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Elderly Health Care</h1>
+		<form>
+			<label for="medication-name">Medication Name:</label>
+			<input type="text" id="medication-name" name="medication-name" required><br><br>
+			<label for="dosage">Dosage:</label>
+			<input type="number" id="dosage" name="dosage" required><br><br>
+			<label for="time">Time:</label>
+			<input type="time" id="time" name="time" required><br><br>
+			<button type="button" onclick="addMedication()">Add Medication</button>
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<th>Medication Name</th>
+					<th>Dosage</th>
+					<th>Time</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody id="medication-list">
+			</tbody>
+		</table>
+	</div>
+    <button id="demo-btn"> <p>Request</p>
+		<p>Demo</p> </button>
+
+	<div id="demo-form" class="demo-form">
+		<button id="cancel" class="cancel"><img src="cncl.jpg"></button>
+
+        <h2>Add your Information</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="contact">Contact No. (optional):</label>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    		<button id="submit" class="submit">Submit</button>
+
+           
+        </form>
+
+
+		
+        
+    
+    </div>
+	<div class="popup" id="popup">
+		<img src="right.png">
+		<h2>Thank You!</h2>
+		<p>Your Details Has Been successfully submited</p>
+		<p>we will reach you soon</p>
+		<button id="buttonk" class="buttonk">OK</button>
+
+
+	</div>
+   
+
+    
+	<script src="script.js">
+
+
+
+    </script>
+</body>
+</html>

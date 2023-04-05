@@ -1,0 +1,309 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e558b;
+    background-image: url('mdcation.jpg');
+    background-size: 100% 141%;
+   
+ 
+    
+   
+}
+
+
+/* h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1:hover{
+    font-display: glow;
+    
+} */
+
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  color: #2c3e50;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0062cc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Form styles */
+.form-row {
+    margin-bottom: 10px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="time"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="time"] {
+    width: auto;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
+
+
+
+
+/* request a demo form */
+
+#demo-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4bd37b;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+#demo-btn:hover {
+  transform: translateY(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+.sidebar:hover + #demo-btn {
+  transform: translateX(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style for demo form container */
+.demo-form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    right: 25%;
+  }
+  
+  /* Style for demo form heading */
+  .demo-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for demo form fields */
+  .demo-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .demo-form input[type="text"],
+  .demo-form input[type="email"],
+  .demo-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .demo-form input[type="tel"] {
+    width: 100%;
+    
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .demo-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .demo-form input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  .cancel img{
+    height: 30px;
+    width: 30px;
+   
+   
+    
+  }
+  .cancel{
+    position: relative;
+   left: 90%;
+  
+  
+    
+  }
+  
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .demo-form {
+      max-width: 80%;
+    }
+  }
+  
+
+  /* popup */
+
+
+  .popup{
+    width: 300px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+transition: none;
+    
+
+  }
+
+  .popup img{
+    width: 60px;
+    margin-top: -1%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+  }
+
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+
+  }
